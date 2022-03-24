@@ -233,22 +233,24 @@ html {
   /* Media queries
   /* ============== */
   
-  @media (min-width: 30em) {
+  @media (min-width: 500px) {
     main aside {
       float: right;
       margin-left: 1rem;
       width: 16rem;
     }
+    main {background-color: ghostwhite;}
     header {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;			
     }
   }
-  @media (min-width: 37.5em) {
+  @media (min-width: 600px) {
     main {
       display: flex;
       flex-flow: row nowrap;
+      background-color: navajowhite;
     }
     #leftmenu {
       width: 21%;
@@ -256,4 +258,7 @@ html {
     #content {
       width: 79%;
     }
+  }
+  @media (max-width:500px) {
+      main {background-color: burlywood;}
   }
